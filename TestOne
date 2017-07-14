@@ -1,0 +1,20 @@
+package Junit;
+
+import org.junit.Test;
+import org.junit.Ignore;
+import static org.junit.Assert.assertEquals;
+/**
+ * Created by luceromoreno on 7/07/17.
+ */
+
+public class MessageOne {
+
+    String some = "This is a test";
+    NameMess messageUtil = new NameMess(some);
+
+    @Test
+    public void testPrintMessage() {
+        System.out.println("You can write whatever you want");
+        assertEquals(some, messageUtil.printMessage());
+    }
+}
