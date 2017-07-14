@@ -1,0 +1,19 @@
+# Junit
+package Junit;
+
+import org.junit.runner.RunWith;
+import org.junit.runners.Suite;
+/**
+ * Created by luceromoreno on 7/07/17.
+ */
+
+
+@RunWith(Suite.class)
+@Suite.SuiteClasses(
+        {
+MessageOne.class, MessageTwo.class
+}
+)
+
+public class Junit {
+}
