@@ -1,0 +1,20 @@
+
+import org.junit.Test;
+import org.junit.Ignore;
+import static org.junit.Assert.assertEquals;
+/**
+ * Created by luceromoreno on 7/07/17.
+ */
+
+public class MessageTwo {
+
+    String tell = "Ali";
+    GetMessage messageUtil = new GetMessage(tell);
+
+    @Test
+    public void thisMessage() {
+        System.out.println("Lucy loves Ali");
+        firstmessage = "Hi!" + "This is Ali";
+        assertEquals(tell,messageUtil.salutationMessage());
+    }
+}
