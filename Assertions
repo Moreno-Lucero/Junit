@@ -1,0 +1,43 @@
+package Junit;
+
+import org.junit.Test;
+import static org.junit.Assert.*;
+
+/**
+ * Created by luceromoreno on 7/18/17.
+ */
+
+public class Assert {
+
+    @Test
+    public void testAssertions() {
+        //test data
+        String yaya = new String ("hello");
+        String ashley = new String ("hi");
+        String kevin = null;
+        String lucy = "greetings";
+        String raul = "hey";
+
+        int number1 = 1;
+        int number2 = 2;
+
+        String[] expectedArray = {"friend one", "friend two", "friends three"};
+        String[] resultArray =  {"friend one", "friend two", "friend three"};
+
+        assertEquals(yaya, ashley);
+
+        assertTrue (number1 < number2);
+
+        assertFalse(number1 > number2);
+
+        assertNotNull(yaya);
+
+        assertNull(kevin);
+
+        assertSame(lucy,raul);
+
+        assertNotSame(yaya, kevin);
+
+        assertArrayEquals(expectedArray, resultArray);
+    }
+}
